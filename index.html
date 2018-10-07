@@ -16,20 +16,20 @@
                 <div class="shadow"></div>
                 <main>
                     <label>Your Name</label>
-                    <input type="text" pattern="[А-Яа-яЁё]{3,8}" required>
+                    <input type="text" pattern="[А-Яа-яЁё]{3,8}">
                     <label>Email Address</label>
-                    <input type="email" required>
+                    <input type="email">
                     <label>Password</label>
-                    <input type="password" required>
+                    <input type="password">
                     <label>Company</label>
-                    <input type="text" pattern="(([А-Яа-яЁё])([0-9]){1,9})" required> <!-- pattern="(([А-Яа-яЁё])([0-9])){1,9}" required -->
+                    <input type="text" pattern="(?=^.{1,9}$)(?=.*[А-Яа-яЁё])(?=.*[0-9]).*" required> <!-- pattern="(([А-Яа-яЁё])([0-9])){1,9}" required -->
                     <label>Phone Number</label>
                     <input type="tel" pattern="[\d]{1,}">
                     <label>Your Website</label>
                     <input type="url" placeholder="http://">
                     <label>Budget</label>
                     <div class="select-cont">
-                        <select name="" id="" required>
+                        <select name="" id="">
                             <option value="">Please Select</option>
                             <option value="">Не ставьте 2</option>
                             <option value="">По робототехнике</option>
