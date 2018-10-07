@@ -8,35 +8,42 @@
 </head>
 <body>
     <section>
-        <form action="">
-            <header>
-                <h1>Регистрация</h1>
-            </header>
-            <main>
-                <p>Your Name</p>
-                <input type="text" required>
-                <p>Email Address</p>
-                <input type="email" required>
-                <p>Password</p>
-                <input type="password" required>
-                <p>Company</p>
-                <input type="text" required>
-                <p>Phone Number</p>
-                <input type="tel" required>
-                <p>Your Website</p>
-                <input type="url" placeholder="http://">
-                <p>Budget</p>
-                <select name="" id="" required>
-                    <option value="">Please Select</option>
-                    <option value="">Не ставьте 2</option>
-                    <option value="">По робототехнике</option>
-                    <option value="">Я сделаю робота</option>
-                    <option value="">Честно</option>
-                </select>
-                <mark>Your information is sale with us. Guarantteed!</mark>
-                <input type="submit">
-            </main>
-        </form>
+        <fieldset>
+            <form action="">
+                <header>
+                    <h1>Регистрация</h1>
+                </header>
+                <div class="shadow"></div>
+                <main>
+                    <label>Your Name</label>
+                    <input type="text" pattern="[А-Яа-яЁё]{3,8}" required>
+                    <label>Email Address</label>
+                    <input type="email" required>
+                    <label>Password</label>
+                    <input type="password" required>
+                    <label>Company</label>
+                    <input type="text" pattern="(([А-Яа-яЁё])([0-9]){1,9})" required> <!-- pattern="(([А-Яа-яЁё])([0-9])){1,9}" required -->
+                    <label>Phone Number</label>
+                    <input type="tel" pattern="[\d]{1,}">
+                    <label>Your Website</label>
+                    <input type="url" placeholder="http://">
+                    <label>Budget</label>
+                    <div class="select-cont">
+                        <select name="" id="" required>
+                            <option value="">Please Select</option>
+                            <option value="">Не ставьте 2</option>
+                            <option value="">По робототехнике</option>
+                            <option value="">Я сделаю робота</option>
+                            <option value="">Честно</option>
+                        </select>
+                        <div></div>
+                    </div>
+                    <mark>Your information is sale with us. Guarantteed!</mark>
+                    <input type="submit">
+                </main>
+            </form>
+        </fieldset>
+        <div class="shadow"></div>
     </section>
 </body>
 </html>
